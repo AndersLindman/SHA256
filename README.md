@@ -5,10 +5,8 @@ Example use:
 
 var hexString = SHA256.hash('text');
 
-The message argument for SHA256.hash() is converted to a UTF-8 byte array before the hash value is calculated.
-
-To get the hash value for a byte array directly without any conversion, use:
+To get the hash value as a byte array, use:
 
 var hashAsByteArray = SHA256.digest(messageByteArray);
 
-The SHA256.hash() function returns a hex string and SHA256.digest() returns a byte array.
+The SHA256.hash() function returns a hex string and SHA256.digest() returns a byte array. If the message argument for SHA256.hash() or SHA256.digest() is a string it's converted to a UTF-8 byte array before the hash value is calculated.
