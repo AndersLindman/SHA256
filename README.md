@@ -5,7 +5,7 @@ Example use:
 
 var hexString = SHA256.hash('text');
 
-The message parameter for SHA256.hash() is converted to a UTF-8 byte array.
+The message argument for SHA256.hash() is converted to a UTF-8 byte array before the hash value is calculated.
 
 To get the hash value for a byte array directly without any conversion, use:
 
